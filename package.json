@@ -1,0 +1,28 @@
+{
+  "name": "express-wztv",
+  "version": "1.0.0",
+  "description": "test express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arno2T/express.git"
+  },
+  "author": "Arno2T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arno2T/express/issues"
+  },
+  "homepage": "https://github.com/Arno2T/express#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
