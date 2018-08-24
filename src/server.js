@@ -55,16 +55,28 @@ app.get('/data',
     })
 
 app.post('/addMovie', (req,res)=>{
+    const errorMessage=[]
     const newMovie = {
         id: movies.length,
         title: req.body.title,
         synopsis: req.body.synopsis
     }
+    function validateFields(field, msg){
+        if(!field || field.trim().length===0){
+            errors.push(msg)
+        }
+    }
+    const errors = []
+    validateFields(newMovie.title, "Titre obligatoire")
+    validateFields(newMovie.synopsis, "Résumé obligatoire")
+    if (errors.length>0) return res.status(400).send(errors)
+   
     movies.push(newMovie)
-    fs.writeFile('src/data/movies.json', JSON.stringify(movies), (err)=>{
-        if (err) throw err
-        console.log('The file has been saved')
+     fs.writeFile('src/data/movies.json', JSON.stringify(movies), (err)=>{
+     if (err) throw err
+    console.log('The file has been saved')   
     })
+    res.send(errorMessage)
 
 
 })
