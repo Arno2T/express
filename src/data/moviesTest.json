@@ -26,12 +26,5 @@
         "url": "http://localhost:5000/img/starwars.jpg",
         "autre": "affiche du film",
         "synopsis": "Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie. Au cours de périlleuses aventures dans les bas-fonds d’un monde criminel, Han Solo va faire la connaissance de son imposant futur copilote Chewbacca et croiser la route du charmant escroc Lando Calrissian… Ce voyage initiatique révèlera la personnalité d’un des héros les plus marquants de la saga Star Wars. "
-    },
-    {
-        "id": 4,
-        "title": "Le grand bleu",
-        "url": "http://localhost:5000/img/legrandbleu.jpg",
-        "autre": "affiche du film",
-        "synopsis": "C'est l'histoire d'un schtroumphf géant qui s'échappe de son champignon pour aller manger Gargamel"
     }
 ]
